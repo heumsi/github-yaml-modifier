@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set Arguments
+GITHUB_URL=$1
+GITHUB_REPO=$2
+GITHUB_BRANCH=$3
+YAML_PATH=$4
+TARGET_KEY=$5
+NEW_VALUE=$6
+COMMIT_MESSAGE=$7
+COMMIT_AUTHOR=$8
+
+# Execute main.py
+python3 main.py

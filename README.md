@@ -33,6 +33,19 @@ $ docker run \
 heumsi/github-yaml-modifier
 ```
 
+Or instead,
+
+```bash
+$ docker run -it heumsi/github-yaml-modifier sh entrypoint.sh \ 
+https://heumsi:{MY_ACCESS_TOKEN}@github.com/heumsi/playground.git \
+master \
+test.yaml \
+app.image \
+newImageName \
+"Update yaml from github-yaml-modifier" \
+"bot <bot@bot.com>" 
+```
+
 After that, you can see that there is a commit that modified the yaml file on GitHub like this.
 
 ![](https://user-images.githubusercontent.com/31306282/122244912-3a4ce680-cf00-11eb-8370-8511a3666585.png)
